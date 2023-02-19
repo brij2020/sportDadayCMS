@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "world_cup_events",
+  "info": {
+    "singularName": "world-cup-event",
+    "pluralName": "world-cup-events",
+    "displayName": "World Cup Events",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Winner": {
+      "type": "string",
+      "required": true
+    },
+    "Year": {
+      "type": "date",
+      "required": true,
+      "default": "2023-01-01"
+    },
+    "RunnerUp": {
+      "type": "string",
+      "required": true
+    },
+    "Host": {
+      "type": "string",
+      "required": true
+    },
+    "Final_Match_Heighlight": {
+      "type": "richtext"
+    },
+    "Venu": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "IsLimitedOvers": {
+      "type": "boolean",
+      "required": true
+    },
+    "flagTeamA": {
+      "type": "string"
+    },
+    "flagTeamB": {
+      "type": "string"
+    },
+    "MediaA": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "mediaB": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

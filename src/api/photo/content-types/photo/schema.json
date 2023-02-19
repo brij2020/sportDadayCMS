@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photos",
+  "info": {
+    "singularName": "photo",
+    "pluralName": "photos",
+    "displayName": "Photos Gallary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "EventName": {
+      "type": "string"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "caption": {
+      "type": "richtext",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "poster": {
+      "type": "string"
+    }
+  }
+}
